@@ -110,18 +110,14 @@ function Calculator() {
   return (
     <div className="container">
       <div className="calculator-box">
-      <div className="window-closing">
-        
+        <div className="window-closing">
           <div className="buttons">
             <span>-</span>
             <span>□</span>
             <span className="x">×</span>
           </div>
-          </div>
+        </div>
         <div className="screen">
-         
-
-          
           {input !== "" || input === "0" ? (
             <NumericFormat
               value={input}
@@ -138,30 +134,78 @@ function Calculator() {
         </div>
 
         <div className="keypad">
-          <button className="calculator-spe" onClick={percent}>%</button>
-          <button className="calculator-spe" onClick={reset}>CE</button>
-          <button className="calculator-spe" onClick={reset}>C</button>
-          <button className="calculator" onClick={backspace}><img className="correction" src={correction} alt="correction"/></button>
-          <button className="calculator-spe" onClick={operatorType}>¹/𝑥</button>
-          <button className="calculator-spe" onClick={operatorType}>𝑥²</button>
-          <button className="calculator-spe" onClick={operatorType}>²√𝑥</button>
-          <button className="calculator" onClick={operatorType}>÷</button>
-          <button className="numberPad" onClick={inputNum}>7</button>
-          <button className="numberPad" onClick={inputNum}>8</button>
-          <button className="numberPad" onClick={inputNum}>9</button>
-          <button className="calculator" onClick={operatorType}>×</button>
-          <button className="numberPad" onClick={inputNum}>4</button>
-          <button className="numberPad" onClick={inputNum}>5</button>
-          <button className="numberPad" onClick={inputNum}>6</button>
-          <button className="calculator" onClick={operatorType}>–</button>
-          <button className="numberPad" onClick={inputNum}>1</button>
-          <button className="numberPad" onClick={inputNum}>2</button>
-          <button className="numberPad" onClick={inputNum}>3</button>
-          <button className="calculator" onClick={operatorType}>+</button>
-          <button className="numberPad" onClick={minusPlus}>+/–</button>
-          <button className="numberPad" onClick={inputNum}>0</button>
-          <button className="numberPad" onClick={inputNum}>.</button>
-          <button className="equalsPad" onClick={equals}>=</button>
+          <button className="calculator-spe" onClick={percent}>
+            %
+          </button>
+          <button className="calculator-spe" onClick={reset}>
+            CE
+          </button>
+          <button className="calculator-spe" onClick={reset}>
+            C
+          </button>
+          <button className="calculator" onClick={backspace}>
+            <img className="correction" src={correction} alt="correction" />
+          </button>
+          <button className="calculator-spe" onClick={operatorType}>
+            ¹/𝑥
+          </button>
+          <button className="calculator-spe" onClick={operatorType}>
+            𝑥²
+          </button>
+          <button className="calculator-spe" onClick={operatorType}>
+            ²√𝑥
+          </button>
+          <button className="calculator" onClick={operatorType}>
+            ÷
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            7
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            8
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            9
+          </button>
+          <button className="calculator" onClick={operatorType}>
+            ×
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            4
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            5
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            6
+          </button>
+          <button className="calculator" onClick={operatorType}>
+            –
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            1
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            2
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            3
+          </button>
+          <button className="calculator" onClick={operatorType}>
+            +
+          </button>
+          <button className="numberPad" onClick={minusPlus}>
+            +/–
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            0
+          </button>
+          <button className="numberPad" onClick={inputNum}>
+            .
+          </button>
+          <button className="equalsPad" onClick={equals}>
+            =
+          </button>
         </div>
       </div>
     </div>
