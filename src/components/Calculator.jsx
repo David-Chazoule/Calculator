@@ -114,7 +114,7 @@ function Calculator() {
           <div className="buttons">
             <span>-</span>
             <span>□</span>
-            <span>X</span>
+            <span className="x">x</span>
           </div>
           </div>
         <div className="screen">
